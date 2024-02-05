@@ -1,10 +1,11 @@
 import React from "react";
 import style from "./Home.module.css";
+import Carousel from "../Carousel/Carousel.jsx";
 
-export default function Template() {
+export default function Home() {
   return (
     <>
-      <h1>Template</h1>
+      <Carousel />
     </>
   );
 }
