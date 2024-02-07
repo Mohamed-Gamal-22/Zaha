@@ -3,6 +3,7 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.min.css";
 import "owl.carousel/dist/assets/owl.theme.default.min.css";
 import img1 from "../../Images/fff.jpg";
+import style from "./Carousel.module.css";
 
 export default function Carousel() {
   const options = {
@@ -24,13 +25,13 @@ export default function Carousel() {
       550: {
         items: 2,
       },
-      700: {
+      750: {
         items: 3,
       },
-      850: {
+      1000: {
         items: 4,
       },
-      1000: {
+      1200: {
         items: 5,
       },
     },
@@ -38,30 +39,91 @@ export default function Carousel() {
   return (
     <>
       <div className="container">
+        <div className="mt-5"></div>
         <OwlCarousel {...options}>
-          <div className="item mt-5 pt-5 rounded rounded-3 overflow-hidden">
-            <img src={img1} className="w-100 rounded rounded-3" alt="img" />
+          <div
+            className={`${style.item} mt-5 rounded rounded-3 overflow-hidden position-relative`}
+          >
+            <img src={img1} className="w-100" alt="img" />
+            <div
+              className={`${style.layer} border-0 d-flex justify-content-center align-items-center`}
+            >
+              <div className="btn btn-primary text-capitalize text-white">
+                Veiw More
+              </div>
+            </div>
           </div>
-          <div className="item mt-5 pt-5 rounded rounded-3 overflow-hidden">
-            <img src={img1} className="w-100 rounded rounded-3" alt="img" />
+          <div
+            className={`${style.item} mt-5 rounded rounded-3 overflow-hidden position-relative`}
+          >
+            <img src={img1} className="w-100" alt="img" />
+            <div
+              className={`${style.layer} border-0 d-flex justify-content-center align-items-center`}
+            >
+              <div className="btn btn-primary text-capitalize text-white">
+                Veiw More
+              </div>
+            </div>
           </div>
-          <div className="item mt-5 pt-5 rounded rounded-3 overflow-hidden">
-            <img src={img1} className="w-100 rounded rounded-3" alt="img" />
+          <div
+            className={`${style.item} mt-5 rounded rounded-3 overflow-hidden position-relative`}
+          >
+            <img src={img1} className="w-100" alt="img" />
+            <div
+              className={`${style.layer} border-0 d-flex justify-content-center align-items-center`}
+            >
+              <div className="btn btn-primary text-capitalize text-white">
+                Veiw More
+              </div>
+            </div>
           </div>
-          <div className="item mt-5 pt-5 rounded rounded-3 overflow-hidden">
-            <img src={img1} className="w-100 rounded rounded-3" alt="img" />
+          <div
+            className={`${style.item} mt-5 rounded rounded-3 overflow-hidden position-relative`}
+          >
+            <img src={img1} className="w-100" alt="img" />
+            <div
+              className={`${style.layer} border-0 d-flex justify-content-center align-items-center`}
+            >
+              <div className="btn btn-primary text-capitalize text-white">
+                Veiw More
+              </div>
+            </div>
           </div>
-          <div className="item mt-5 pt-5 rounded rounded-3 overflow-hidden">
-            <img src={img1} className="w-100 rounded rounded-3" alt="img" />
+          <div
+            className={`${style.item} mt-5 rounded rounded-3 overflow-hidden position-relative`}
+          >
+            <img src={img1} className="w-100" alt="img" />
+            <div
+              className={`${style.layer} border-0 d-flex justify-content-center align-items-center`}
+            >
+              <div className="btn btn-primary text-capitalize text-white">
+                Veiw More
+              </div>
+            </div>
           </div>
-          <div className="item mt-5 pt-5 rounded rounded-3 overflow-hidden">
-            <img src={img1} className="w-100 rounded rounded-3" alt="img" />
+          <div
+            className={`${style.item} mt-5 rounded rounded-3 overflow-hidden position-relative`}
+          >
+            <img src={img1} className="w-100" alt="img" />
+            <div
+              className={`${style.layer} border-0 d-flex justify-content-center align-items-center`}
+            >
+              <div className="btn btn-primary text-capitalize text-white">
+                Veiw More
+              </div>
+            </div>
           </div>
-          <div className="item mt-5 pt-5 rounded rounded-3 overflow-hidden">
-            <img src={img1} className="w-100 rounded rounded-3" alt="img" />
-          </div>
-          <div className="item mt-5 pt-5 rounded rounded-3 overflow-hidden">
-            <img src={img1} className="w-100 rounded rounded-3" alt="img" />
+          <div
+            className={`${style.item} mt-5 rounded rounded-3 overflow-hidden position-relative`}
+          >
+            <img src={img1} className="w-100" alt="img" />
+            <div
+              className={`${style.layer} border-0 d-flex justify-content-center align-items-center`}
+            >
+              <div className="btn btn-primary text-capitalize text-white">
+                Veiw More
+              </div>
+            </div>
           </div>
         </OwlCarousel>
       </div>
