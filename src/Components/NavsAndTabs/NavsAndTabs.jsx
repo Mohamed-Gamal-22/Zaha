@@ -64,7 +64,7 @@ export default function NavsAndTabs() {
             </button>
           </li>
         </ul>
-        <div className="tab-content" id="myTabContent">
+        <div className="tab-content text-capitalize" id="myTabContent">
           <div
             className="tab-pane fade show active"
             id="all"
@@ -72,7 +72,7 @@ export default function NavsAndTabs() {
             aria-labelledby="all-tab"
           >
             <div className="container my-5">
-              <div className="row">
+              <div className="row g-3">
                 <div className="col-sm-6 col-md-4 col-lg-3">
                   <div className="mycard rounded rounded-3 overflow-hidden">
                     <div className={`${style.myimg}`}>
@@ -83,26 +83,208 @@ export default function NavsAndTabs() {
                           <i className={` fa-solid fa-eye`}></i>
                           <small className={`${style.small}`}>overveiw</small>
                         </span>
-                        <i className="fa-solid fa-cart-plus"></i>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
                         <span className={style.title}>this is title</span>
                       </div>
                     </div>
-                    <div className="contnet">
+                    <div className={`${style.content}`}>
                       <div className="left">
-                        <h6>trench coat</h6>
-                        <ul>
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
                           <i className="fa-solid fa-star"></i>
                         </ul>
-                        <p>1.400,00 EGP – 1.700,00 EGP</p>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
                       </div>
-                      <div className="right">
-                        <div className="circle"></div>
-                        <div className="circle"></div>
-                        <div className="circle"></div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
                       </div>
                     </div>
                   </div>
@@ -116,7 +298,118 @@ export default function NavsAndTabs() {
             role="tabpanel"
             aria-labelledby="coats-tab"
           >
-            Coats Show
+            <div className="container my-5">
+              <div className="row g-3">
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div
             className="tab-pane fade"
@@ -124,7 +417,154 @@ export default function NavsAndTabs() {
             role="tabpanel"
             aria-labelledby="dresses-tab"
           >
-            Dresses show
+            <div className="container my-5">
+              <div className="row g-3">
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div
             className="tab-pane fade"
@@ -132,7 +572,298 @@ export default function NavsAndTabs() {
             role="tabpanel"
             aria-labelledby="sets-tab"
           >
-            Sets show
+            <div className="container my-5">
+              <div className="row g-3">
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                  <div className="mycard rounded rounded-3 overflow-hidden">
+                    <div className={`${style.myimg}`}>
+                      <img src={img} className="w-100" alt="img" />
+                      <div className={`${style.layer}`}>
+                        <div className={`${style.sold}`}>sold out</div>
+                        <span className={`${style.eye}`}>
+                          <i className={` fa-solid fa-eye`}></i>
+                          <small className={`${style.small}`}>overveiw</small>
+                        </span>
+                        <div className={`${style.shopCart} pointer`}>
+                          <i className="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <span className={style.title}>this is title</span>
+                      </div>
+                    </div>
+                    <div className={`${style.content}`}>
+                      <div className="left">
+                        <h6 className="small my-2">trench coat</h6>
+                        <ul className="p-0 my-2">
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star text-warning"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </ul>
+                        <p className="small">1.400,00 EGP – 1.700,00 EGP</p>
+                      </div>
+                      <div className={`${style.right}`}>
+                        <div className={`bg-danger ${style.circle}`}></div>
+                        <div className={`bg-info ${style.circle}`}></div>
+                        <div className={`bg-success ${style.circle}`}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,9 +1,12 @@
 import React from "react";
 import style from "./Navbar.module.css";
+import SearchInput from './../SearchInput/SearchInput';
+
 
 export default function Navbar() {
   return (
     <>
+    <SearchInput />
       <nav className={`bg-color p-2 text-capitalize fixed-bottom`}>
         <div className="container d-flex justify-content-around align-items-center">
           <div className="ico small d-flex align-items-center justify-content-center flex-column light-color pointer">

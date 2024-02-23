@@ -1,16 +1,13 @@
 .side {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   position: fixed;
   z-index: 3500;
   top: 0;
   left: 0;
   transition: all 0.4s;
   backdrop-filter: blur(8px);
-  background-image: linear-gradient(
-    rgba(85, 166, 238, 0.37),
-    rgba(85, 166, 238, 0.37)
-  );
+  background-image: linear-gradient(    rgba(85, 166, 238, 0.37),    rgba(85, 166, 238, 0.37)  );
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
@@ -19,7 +16,7 @@
 
 .links {
   background-color: #fff;
-  min-height: 100vh;
+  height: 100vh;
   width: 300px;
   padding: 20px;
   position: absolute;
@@ -28,8 +25,38 @@
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
+}
+
+.links ul {
+  margin-top: 40px;
+}
+
+.links ul li {
+  position: relative;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.links ul li::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #09c;
   top: 0;
-  right: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.special::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #09c;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
 }
 
 .toggle {
@@ -39,7 +66,7 @@
   background-color: #fff;
   border: 1px solid #ccc;
   position: absolute;
-  left: -19px;
+  right: -19px;
   top: 25px;
   z-index: 4500;
   border-radius: 50%;
