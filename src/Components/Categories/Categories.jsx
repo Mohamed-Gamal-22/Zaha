@@ -36,6 +36,16 @@ export default function Categories() {
 
   async function addCategory() {
     try {
+      // Check if name is empty
+      if (!name.trim()) {
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: "Category name cannot be empty",
+        });
+        return;
+      }
+  
       await axios.post(
         `https://www.zahascarves.com/api/category/create`,
         { name },
@@ -55,6 +65,7 @@ export default function Categories() {
       console.error("Error adding category:", error);
     }
   }
+  
 
   async function deleteCategory(id) {
     try {
@@ -77,26 +88,36 @@ export default function Categories() {
   }
 
   async function updateCategory() {
-    try {
-      await axios.post(
-        `https://www.zahascarves.com/api/category/update/${categoryIdToUpdate}`,
-        { name },
-        {
-          headers: {
-            Authorization: `Bearer tmTqMwqaJf0gGEQWE5kQAkfn37ITr46RpjVCfHWha266e4cc`,
-          },
-        }
-      );
-      setShowUpdateModal(false);
-      getAllCategories(currentPage);
+  try {
+    // Check if name is empty
+    if (!name.trim()) {
       Swal.fire({
-        icon: "success",
-        title: "Category updated successfully",
+        icon: "error",
+        title: "Error",
+        text: "Category name cannot be empty",
       });
-    } catch (error) {
-      console.error("Error updating category:", error);
+      return;
     }
+
+    await axios.post(
+      `https://www.zahascarves.com/api/category/update/${categoryIdToUpdate}`,
+      { name },
+      {
+        headers: {
+          Authorization: `Bearer tmTqMwqaJf0gGEQWE5kQAkfn37ITr46RpjVCfHWha266e4cc`,
+        },
+      }
+    );
+    setShowUpdateModal(false);
+    getAllCategories(currentPage);
+    Swal.fire({
+      icon: "success",
+      title: "Category updated successfully",
+    });
+  } catch (error) {
+    console.error("Error updating category:", error);
   }
+}
 
   useEffect(() => {
     getAllCategories();
@@ -162,6 +183,7 @@ export default function Categories() {
                     onClick={() => {
                       setCategoryIdToUpdate(category.id);
                       setShowUpdateModal(true);
+                      setName(category.name)
                     }}
                   >
                     Edit
