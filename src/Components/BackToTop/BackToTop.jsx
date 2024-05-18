@@ -5,7 +5,7 @@ export default function BackToTop() {
   const [show, setShow] = useState(false);
 
   function back() {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function BackToTop() {
 
     window.addEventListener("scroll", handleScroll);
 
-    // component will unmount
+    // component will unmount ==> remove Event
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -29,7 +29,9 @@ export default function BackToTop() {
   return (
     <div
       onClick={() => back()}
-      className={`${style.back} ${show ? "opacity-100" : "opacity-0"}`}
+      className={`${style.back} ${
+        show ? "opacity-100 visible" : "opacity-0 invisible"
+      }`}
     >
       <i className="fa-solid fa-angle-up"></i>
     </div>

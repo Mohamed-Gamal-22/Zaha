@@ -14,3 +14,7 @@
 .item:hover .layer {
   top: 0;
 }
+
+.btn {
+  background-color: #f493a6 !important;
+}

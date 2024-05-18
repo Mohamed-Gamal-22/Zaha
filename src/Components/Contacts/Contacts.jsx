@@ -8,7 +8,7 @@ export default function Contacts() {
         <div className="row">
           <div className="col-lg-3 col-md-4 mb-3">
             <h4 className="mb-4">
-              Contact <span className="text-primary fw-bold">Zaha</span> On:
+              Contact <span className={`${style.color} fw-bold`}>Zaha</span> On:
             </h4>
             <p className="small my-1">(+20) 521 - 249 - 976</p>
             <p className="small my-1">contact@bynusayba.com</p>

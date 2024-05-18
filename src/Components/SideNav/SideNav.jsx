@@ -1,18 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import style from "./SideNav.module.css";
 import "animate.css";
 
-export default function SideNav({ isOpen, setIsOpen, clicked, setClidcked }) {
+export default function SideNav({ isOpen, setIsOpen }) {
+  function remove(e) {
+    if (e.target.classList.contains("side")) {
+      setIsOpen(false);
+    }
+  }
+
   return (
     <>
       <div
+        onClick={(e) => remove(e)}
         className={`${style.side} ${
           isOpen ? "visible opacity-1" : "invisible opacity-0"
-        }`}
+        } side`}
       >
         <div
           className={`${style.links} animate__animated ${
-            clicked
+            isOpen
               ? "animate__fadeInLeft delay-2s"
               : "animate__fadeOutLeft delay-2s"
           }`}
@@ -30,7 +37,6 @@ export default function SideNav({ isOpen, setIsOpen, clicked, setClidcked }) {
             className={`${style.toggle} test`}
             onClick={() => {
               setIsOpen(false);
-              setClidcked((c) => !c);
             }}
           >
             <i className="fa-solid fa-angle-left test"></i>

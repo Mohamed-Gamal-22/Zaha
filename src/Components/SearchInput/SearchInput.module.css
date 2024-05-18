@@ -8,8 +8,8 @@
   transition: all 0.4s;
   backdrop-filter: blur(8px);
   background-image: linear-gradient(
-    rgba(85, 166, 238, 0.37),
-    rgba(85, 166, 238, 0.37)
+    rgba(115, 69, 79, 0.3),
+    rgba(115, 69, 79, 0.3)
   );
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -18,10 +18,9 @@
 }
 
 .links {
-  background-color: #fff;
-  height: 100px;
+  background-color: #73454f;
   width: 100%;
-  padding: 20px;
+  padding: 10px 0 5px 0;
   position: absolute;
   transition: all 0.2s;
   -webkit-transition: all 0.2s;

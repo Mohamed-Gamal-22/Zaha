@@ -9,11 +9,11 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  background-color: rgb(64, 85, 244);
+  background-color: #f3dade;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #f1f1f1;
+  color: #333;
   z-index: 15;
   cursor: pointer;
   opacity: 0;

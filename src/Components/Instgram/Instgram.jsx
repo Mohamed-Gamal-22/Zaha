@@ -5,7 +5,9 @@ import model from "../../Images/model.jpg";
 export default function Instgram() {
   return (
     <>
-      <h1 className="mt-5 mb-4 text-center text-capitalize fw-bold text-primary">
+      <h1
+        className={`mt-5 ${style.color} mb-4 text-center text-capitalize fw-bold text-dark`}
+      >
         follow us on Instgram
       </h1>
       <div className="container text-center pointer">

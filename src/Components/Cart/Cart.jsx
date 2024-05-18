@@ -4,12 +4,18 @@ import "animate.css";
 import img from "../../Images/model.jpg";
 
 export default function Cart({ cartOpen, setCartOpen }) {
+  function remove(e) {
+    if (e.target.classList.contains("cart")) {
+      setCartOpen(false);
+    }
+  }
   return (
     <>
       <div
+        onClick={(e) => remove(e)}
         className={`${style.side} ${
           cartOpen ? "visible opacity-1" : "invisible opacity-0"
-        } overflow-auto`}
+        } overflow-auto cart`}
       >
         <div
           className={`${style.links}`}
@@ -24,7 +30,9 @@ export default function Cart({ cartOpen, setCartOpen }) {
           <div className="cont text-center">
             <i className="fa-solid fa-bag-shopping text-secondary d-block  fs-1 my-5"></i>
             <p>No Product To Show </p>
-            <div className="btn btn-primary d-flex justify-content-center my-3">
+            <div
+              className={`text-white btn ${style.btn} d-flex justify-content-center my-3`}
+            >
               {" "}
               Return To Shop
             </div>
@@ -194,7 +202,7 @@ export default function Cart({ cartOpen, setCartOpen }) {
               // setClidcked((c) => !c);
             }}
           >
-            <i className="fa-solid fa-angle-left test"></i>
+            <i className="fa-solid fa-angle-right test"></i>
           </div>
         </div>
       </div>

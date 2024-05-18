@@ -1,7 +1,8 @@
 :root {
   --light-color: #f1f1f1;
-  --bg-color: rgb(64, 85, 244);
-  --dark-color: #504f4f;
+  --bg-color: #f3dade;
+  --dark-color: #333;
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -49,8 +50,7 @@ a:hover {
 }
 
 .tabLink.active {
-  background-color: rgb(64, 85, 244) !important;
-  color: #f1f1f1 !important;
+  background-color: var(--bg-color) !important;
+  color: var(--dark-color) !important;
 }
-
 

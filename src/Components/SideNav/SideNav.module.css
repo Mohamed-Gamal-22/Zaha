@@ -7,7 +7,10 @@
   left: 0;
   transition: all 0.4s;
   backdrop-filter: blur(8px);
-  background-image: linear-gradient(    rgba(85, 166, 238, 0.37),    rgba(85, 166, 238, 0.37)  );
+  background-image: linear-gradient(
+    rgba(115, 69, 79, 0.2),
+    rgba(115, 69, 79, 0.2)
+  );
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
@@ -42,7 +45,7 @@
   content: "";
   width: 100%;
   height: 1px;
-  background-color: #09c;
+  background-color: #73454f;
   top: 0;
   left: 0;
   opacity: 0.5;
@@ -53,7 +56,7 @@
   content: "";
   width: 100%;
   height: 1px;
-  background-color: #09c;
+  background-color: #73454f;
   bottom: 0;
   left: 0;
   opacity: 0.5;
